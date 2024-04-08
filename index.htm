@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión en pagina web</title>
+    <title>Crea tu cuenta</title>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,28 +37,11 @@
             margin-bottom: 20px;
         }
 
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
         .form-group input {
             width: 100%;
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 3px;
-        }
-
-        .form-group input[type="submit"] {
-            background-color: #3897f0;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .form-group input[type="submit"]:hover {
-            background-color: #357ae8;
         }
 
         .centro {
@@ -104,30 +86,31 @@
         <h2>Crea tu cuenta</h2>
         <form action="tu_script_de_procesamiento.php" method="post">
             <div class="form-group">
-            
                 <input type="text" id="username" name="username" placeholder="Continuar con Google">
-                <label for="password"></label>
-                <input type="text" id="username" name="username" placeholder="Continuar con Aplee">
+            </div>
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Continuar con Apple">
             </div>
             <div class="centro">
                 <hr>
                 <span>o</span>
                 <hr>
+            </div>
             <div class="form-group">
-                <input type="text" id="username" name="username" placeholder="Correo electronico">
-                <label for="password"></label>
+                <input type="text" id="email" name="email" placeholder="Correo electrónico">
+            </div>
+            <div class="form-group">
                 <input type="password" id="password" name="password" placeholder="Contraseña">
             </div>
             <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="6Ldu9LQpAAAAABz3W8TdWJAciCc96xI53xoC-pdP"></div>
+                <div class="g-recaptcha" data-sitekey="6LeP77QpAAAAANtWCcY14muMafnjwJ9nFBBv_Ztj"></div>
             </div>
             <div class="form-group">
                 <input type="submit" value="Registrarse">
             </div>
         </form>
-        
     </div>
-    
 </body>
 
 </html>
+
